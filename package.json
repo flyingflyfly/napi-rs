@@ -1,6 +1,6 @@
 {
   "name": "@flyingfly/napi-rs",
-  "version": "0.0.0",
+  "version": "0.1.1",
   "main": "index.js",
   "types": "index.d.ts",
   "napi": {
@@ -29,7 +29,8 @@
     "prepublishOnly": "napi prepublish -t npm",
     "test": "ava",
     "universal": "napi universal",
-    "version": "napi version"
+    "version": "napi version",
+    "node": "node main.mjs"
   },
   "packageManager": "yarn@4.6.0"
 }
