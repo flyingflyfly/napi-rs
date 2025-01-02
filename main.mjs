@@ -1,3 +1,7 @@
-import { sum  } from './index.js'
+import test from 'ava'
 
-console.log('From native', sum(40555, 2))
+import { sum } from './index'
+
+test('sum from native', (t) => {
+  t.is(sum(1, 2), 3)
+})
