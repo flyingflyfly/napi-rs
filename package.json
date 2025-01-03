@@ -1,8 +1,12 @@
 {
   "name": "@flyingfly/napi-rs",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "index.js",
   "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
   "napi": {
     "name": "napi-rs",
     "triples": {
@@ -34,10 +38,10 @@
   },
   "packageManager": "yarn@4.6.0",
   "optionalDependencies": {
-    "@flyingfly/napi-rs-darwin-arm64": "0.1.1",
-    "@flyingfly/napi-rs-darwin-x64": "0.1.1",
-    "@flyingfly/napi-rs-linux-x64-gnu": "0.1.1",
-    "@flyingfly/napi-rs-win32-x64-msvc": "0.1.1"
-  },  
+    "@flyingfly/napi-rs-darwin-arm64": "0.1.4",
+    "@flyingfly/napi-rs-darwin-x64": "0.1.4",
+    "@flyingfly/napi-rs-linux-x64-gnu": "0.1.4",
+    "@flyingfly/napi-rs-win32-x64-msvc": "0.1.4"
+  },
   "repository": "https://github.com/flyingflyfly/napi-rs.git"
 }

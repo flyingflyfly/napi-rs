@@ -5,30 +5,30 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@flyingfly/napi-rs-darwin-arm64@npm:0.1.1":
-  version: 0.1.1
-  resolution: "@flyingfly/napi-rs-darwin-arm64@npm:0.1.1"
+"@flyingfly/napi-rs-darwin-arm64@npm:0.1.4":
+  version: 0.1.4
+  resolution: "@flyingfly/napi-rs-darwin-arm64@npm:0.1.4"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@flyingfly/napi-rs-darwin-x64@npm:0.1.1":
-  version: 0.1.1
-  resolution: "@flyingfly/napi-rs-darwin-x64@npm:0.1.1"
+"@flyingfly/napi-rs-darwin-x64@npm:0.1.4":
+  version: 0.1.4
+  resolution: "@flyingfly/napi-rs-darwin-x64@npm:0.1.4"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@flyingfly/napi-rs-linux-x64-gnu@npm:0.1.1":
-  version: 0.1.1
-  resolution: "@flyingfly/napi-rs-linux-x64-gnu@npm:0.1.1"
+"@flyingfly/napi-rs-linux-x64-gnu@npm:0.1.4":
+  version: 0.1.4
+  resolution: "@flyingfly/napi-rs-linux-x64-gnu@npm:0.1.4"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@flyingfly/napi-rs-win32-x64-msvc@npm:0.1.1":
-  version: 0.1.1
-  resolution: "@flyingfly/napi-rs-win32-x64-msvc@npm:0.1.1"
+"@flyingfly/napi-rs-win32-x64-msvc@npm:0.1.4":
+  version: 0.1.4
+  resolution: "@flyingfly/napi-rs-win32-x64-msvc@npm:0.1.4"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -37,10 +37,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@flyingfly/napi-rs@workspace:."
   dependencies:
-    "@flyingfly/napi-rs-darwin-arm64": "npm:0.1.1"
-    "@flyingfly/napi-rs-darwin-x64": "npm:0.1.1"
-    "@flyingfly/napi-rs-linux-x64-gnu": "npm:0.1.1"
-    "@flyingfly/napi-rs-win32-x64-msvc": "npm:0.1.1"
+    "@flyingfly/napi-rs-darwin-arm64": "npm:0.1.4"
+    "@flyingfly/napi-rs-darwin-x64": "npm:0.1.4"
+    "@flyingfly/napi-rs-linux-x64-gnu": "npm:0.1.4"
+    "@flyingfly/napi-rs-win32-x64-msvc": "npm:0.1.4"
     "@napi-rs/cli": "npm:^2.18.4"
     ava: "npm:^6.0.1"
   dependenciesMeta:
