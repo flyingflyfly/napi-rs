@@ -1,7 +1,3 @@
-import test from 'ava'
+import { fibonacci } from './index.js'
 
-import { sum } from './index'
-
-test('sum from native', (t) => {
-  t.is(sum(1, 2), 3)
-})
+console.log(fibonacci(20))
