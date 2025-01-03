@@ -3,6 +3,7 @@
   "version": "0.1.2",
   "main": "index.js",
   "types": "index.d.ts",
+  "private": false,
   "napi": {
     "name": "napi-rs",
     "triples": {
@@ -32,5 +33,11 @@
     "version": "napi version",
     "node": "node main.mjs"
   },
-  "packageManager": "yarn@4.6.0"
+  "packageManager": "yarn@4.6.0",
+  "optionalDependencies": {
+    "@flyingfly/napi-rs-win32-x64-msvc": "0.1.1",
+    "@flyingfly/napi-rs-darwin-x64": "0.1.1",
+    "@flyingfly/napi-rs-linux-x64-gnu": "0.1.1",
+    "@flyingfly/napi-rs-darwin-arm64": "0.1.1"
+  }
 }
