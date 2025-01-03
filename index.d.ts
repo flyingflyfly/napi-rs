@@ -7,3 +7,4 @@ export declare function sum(a: number, b: number): number
 export declare function fibonacci(n: number): number
 export declare function readFileAsync(path: string): Promise<Buffer>
 export declare function asyncFibonacci(arg: number): Promise<number>
+export declare function multiThreadedFibonacci(arg: number): Array<number>

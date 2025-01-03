@@ -310,9 +310,10 @@ if (!nativeBinding) {
   throw new Error(`Failed to load native binding`)
 }
 
-const { sum, fibonacci, readFileAsync, asyncFibonacci } = nativeBinding
+const { sum, fibonacci, readFileAsync, asyncFibonacci, multiThreadedFibonacci } = nativeBinding
 
 module.exports.sum = sum
 module.exports.fibonacci = fibonacci
 module.exports.readFileAsync = readFileAsync
 module.exports.asyncFibonacci = asyncFibonacci
+module.exports.multiThreadedFibonacci = multiThreadedFibonacci

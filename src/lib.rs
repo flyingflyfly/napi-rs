@@ -2,6 +2,8 @@
 use futures::prelude::*;
 use napi::bindgen_prelude::*;
 use napi::tokio::{fs, task};
+use std::sync::{Arc, Mutex};
+use std::thread;
 
 #[macro_use]
 extern crate napi_derive;
@@ -41,4 +43,24 @@ pub async fn async_fibonacci(arg: u32) -> Result<u32> {
   })
   .await
   .unwrap()
+}
+
+#[napi]
+pub fn multi_threaded_fibonacci(arg: u32) -> Result<Vec<u32>> {
+  let res_vex = Arc::new(Mutex::<Vec<u32>>::new(Vec::new()));
+  let mut hadle_vex: Vec<thread::JoinHandle<()>> = Vec::new();
+  for _ in 0..10 {
+    let clone_vex = Arc::clone(&res_vex);
+    let handle: thread::JoinHandle<()> = thread::spawn(move || {
+      let num = fibonacci(arg as i32) as u32;
+      let mut res = clone_vex.lock().unwrap(); // 这里需要加锁，因为多个线程同时访问
+      res.push(num);
+    });
+    hadle_vex.push(handle);
+  }
+  for handle in hadle_vex.into_iter() {
+    handle.join().unwrap();
+  }
+
+  Ok(res_vex.clone().lock().unwrap().to_vec())
 }
