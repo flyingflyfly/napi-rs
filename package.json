@@ -1,6 +1,7 @@
 {
   "name": "@flyingfly/napi-rs",
   "version": "0.1.2",
+  "private": true,
   "main": "index.js",
   "types": "index.d.ts",
   "napi": {
