@@ -37,6 +37,7 @@
     "version": "napi version",
     "node": "node main.mjs"
   },
+  "packageManager": "yarn@4.9.3",
   "optionalDependencies": {
     "@flyingfly/napi-rs-darwin-arm64": "0.1.4",
     "@flyingfly/napi-rs-darwin-x64": "0.1.4",
