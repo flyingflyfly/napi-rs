@@ -7,15 +7,15 @@ version = "0.0.0"
 crate-type = ["cdylib"]
 
 [dependencies]
-napi = { version = "3.4.0", default-features = false, features = [
+napi = { version = "3.5.2", default-features = false, features = [
     "tokio_fs",
     "tokio_rt",
 ] }
-napi-derive = "3.3.0"
-futures = "0.3"
+napi-derive = "3.3.3"
+futures = "0.3.31"
 
 [build-dependencies]
-napi-build = "2.2.4"
+napi-build = "2.3.1"
 
 [profile.release]
 lto = true
