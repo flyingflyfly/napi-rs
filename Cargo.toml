@@ -7,15 +7,15 @@ version = "0.0.0"
 crate-type = ["cdylib"]
 
 [dependencies]
-napi = { version = "3.2.4", default-features = false, features = [
+napi = { version = "3.5.2", default-features = false, features = [
     "tokio_fs",
     "tokio_rt",
-] } # Default enable napi4 feature, see https://nodejs.org/api/n-api.html#node-api-version-matrix
-napi-derive = "3.1.2"
+] }
+napi-derive = "3.3.3"
 futures = "0.3"
 
 [build-dependencies]
-napi-build = "2.2.3"
+napi-build = "2"
 
 [profile.release]
 lto = true

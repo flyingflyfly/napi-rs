@@ -1,6 +1,6 @@
 {
   "name": "@flyingfly/napi-rs",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "main": "index.js",
   "types": "index.d.ts",
   "browser": "browser.js",
@@ -45,6 +45,13 @@
     "@flyingfly/napi-rs-darwin-x64": "0.1.4",
     "@flyingfly/napi-rs-linux-x64-gnu": "0.1.4",
     "@flyingfly/napi-rs-win32-x64-msvc": "0.1.4"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "semi": false,
+    "trailingComma": "all",
+    "singleQuote": true,
+    "arrowParens": "always"
   },
   "repository": "https://github.com/flyingflyfly/napi-rs.git"
 }
