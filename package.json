@@ -1,6 +1,6 @@
 {
   "name": "@flyingfly/napi-rs",
-  "version": "0.1.10",
+  "version": "0.1.9",
   "main": "index.js",
   "types": "index.d.ts",
   "browser": "browser.js",
